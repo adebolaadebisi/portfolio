@@ -1,16 +1,16 @@
-# React + Vite
+# navbar
+<img width="863" height="57" alt="Image" src="https://github.com/user-attachments/assets/fdd6438d-e17a-4265-88c8-d8cff33488f3" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Hero
+<img width="886" height="272" alt="Image" src="https://github.com/user-attachments/assets/c00cf97a-6dcd-4101-b00b-3c3e74559ebc" />
 
-Currently, two official plugins are available:
+### About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="869" height="572" alt="Image" src="https://github.com/user-attachments/assets/2b301474-65a0-4c5a-86b7-acb984723de5" />
 
-## React Compiler
+#### project
+<img width="863" height="57" alt="Image" src="https://github.com/user-attachments/assets/50f4981d-c3f3-4284-b160-ae428ca144e3" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##### Contact
+<img width="810" height="668" alt="Image" src="https://github.com/user-attachments/assets/18994d47-5cf0-44b5-8ce9-570692b9670b" />
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
