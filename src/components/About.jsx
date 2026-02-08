@@ -1,42 +1,44 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const skills = ["React", "TailwindCSS", "JavaScript", "Python", "HTML", "CSS", "Backend"];
+const skillGroups = [
+  {
+    title: "Frontend",
+    skills: ["React", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    title: "Backend",
+    skills: ["Python", "Backend Logic"],
+  },
+];
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 },
+  },
+};
 
 const About = () => {
-  // Container for staggered children
-  const container = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.15, // each skill appears with delay
-      },
-    },
-  };
-
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  };
-
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+    <section id="about" className="py-24 bg-[#0b1220] text-white">
+      <div className="max-w-6xl mx-auto px-6 text-center">
 
-        {/* Profile Image */}
-        <motion.img
-          src="/IMG_5235.jpg"
-          alt="adebola"
-          className="w-40 h-40 mx-auto mb-6 border-4 border-green-700 rounded-lg object-cover"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-        />
-
-        {/* About Title */}
+        {/* Title */}
         <motion.h2
-          className="text-4xl font-bold mb-6"
-          variants={fadeInUp}
+          className="text-4xl font-bold mb-4"
+          variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -44,59 +46,63 @@ const About = () => {
           About Me
         </motion.h2>
 
-        {/* About Text */}
         <motion.p
-          className="mb-6 text-gray-700"
-          variants={fadeInUp}
+          className="text-gray-400 max-w-2xl mx-auto mb-12"
+          variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          Let’s explore some of my work and maybe find a little inspiration along the way!
+          Let’s explore some of my work and maybe find a little inspiration along the way.
         </motion.p>
 
-        {/* Skills Section */}
+        {/* Skills */}
         <motion.div
-          className="mb-6"
+          className="grid md:grid-cols-2 gap-6"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.h3 className="text-2xl font-semibold mb-4" variants={fadeInUp}>
-            Skills
-          </motion.h3>
+          {skillGroups.map((group, i) => (
+            <motion.div
+              key={i}
+              variants={fadeUp}
+              className="bg-[#111827] rounded-xl p-6 border border-white/10 hover:border-green-500/40 transition"
+            >
+              <h3 className="text-xl font-semibold mb-4 text-green-400">
+                {group.title}
+              </h3>
 
-          <div className="flex flex-wrap justify-center gap-3">
-            {skills.map((skill, i) => (
-              <motion.span
-                key={i}
-                className="bg-green-500 text-white px-3 py-1 rounded-full text-sm cursor-default"
-                variants={fadeInUp}
-                whileHover={{ scale: 1.2, backgroundColor: "#16a34a" }}
-              >
-                {skill}
-              </motion.span>
-            ))}
-          </div>
+              <div className="flex flex-wrap gap-2">
+                {group.skills.map((skill, index) => (
+                  <span
+                    key={index}
+                    className="bg-[#0b1220] border border-white/10 px-3 py-1 rounded-full text-sm text-gray-300 hover:text-green-400 hover:border-green-500 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
 
-        {/* Download CV Button */}
+        {/* CV Button */}
         <motion.div
-          className="mt-6"
-          variants={fadeInUp}
+          className="mt-12"
+          variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.a
-            href="/Adebola-Adebisi-CV.pdf" // ✅ corrected path
+          <a
+            href="/Adebola-Adebisi-CV.pdf"
             download
-            className="bg-green-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-800 transition"
-            whileHover={{ scale: 1.05 }}
+            className="inline-block bg-green-600 hover:bg-green-700 px-8 py-3 rounded-lg font-semibold transition"
           >
             Download CV
-          </motion.a>
+          </a>
         </motion.div>
 
       </div>
