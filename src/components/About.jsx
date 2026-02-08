@@ -8,7 +8,7 @@ const skillGroups = [
   },
   {
     title: "Backend",
-    skills: ["Python", "Backend Logic"],
+    skills: ["Python", "FastApi","Mysql"],
   },
 ];
 
