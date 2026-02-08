@@ -2,14 +2,16 @@
 <img width="863" height="57" alt="Image" src="https://github.com/user-attachments/assets/fdd6438d-e17a-4265-88c8-d8cff33488f3" />
 
 ## Hero
-<img width="886" height="272" alt="Image" src="https://github.com/user-attachments/assets/c00cf97a-6dcd-4101-b00b-3c3e74559ebc" />
+![Screenshot_8-2-2026_10447_localhost](https://github.com/user-attachments/assets/684165c9-04ae-46da-a4b9-1cc6e9918db2)
 
 ### About
 
-<img width="869" height="572" alt="Image" src="https://github.com/user-attachments/assets/2b301474-65a0-4c5a-86b7-acb984723de5" />
+![Screenshot_8-2-2026_104428_localhost](https://github.com/user-attachments/assets/b45d5d4f-8765-439a-a4d7-95679b3f0cd9)
 
-#### project
-<img width="863" height="57" alt="Image" src="https://github.com/user-attachments/assets/50f4981d-c3f3-4284-b160-ae428ca144e3" />
+
+###![Screenshot_8-2-2026_104450_localhost](https://github.com/user-attachments/assets/7eebc591-8b91-48fe-a2d9-17df12ba5bf5)
+# project
+
 
 ##### Contact
 <img width="810" height="668" alt="Image" src="https://github.com/user-attachments/assets/18994d47-5cf0-44b5-8ce9-570692b9670b" />
